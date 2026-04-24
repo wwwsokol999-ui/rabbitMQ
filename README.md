@@ -9,7 +9,7 @@
 ```bash
 sudo rabbitmq-plugins enable rabbitmq_management
 ```
-![rabbitmq-ui](rabbitmq-ui.png)
+![rabbitmq-ui.png](rabbitmq-ui.png.png)
 ___
 
 ## Задание 2. Отправка и получение сообщений
