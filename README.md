@@ -20,10 +20,9 @@ ___
 
 Затем запустил consumer.py и убедился, что сообщение успешно получено.
 
-Скриншот очереди
+![rabbitmq-consumer](rabbitmq-consumer.png)
 
-Скриншот получения сообщения
-
+![rabbitmq-queue](rabbitmq-queue.png)
 ____
 
 ## Задание 3. Подготовка HA кластера
@@ -36,17 +35,20 @@ ____
 
 Далее в веб-интерфейсе RabbitMQ проверил, что в кластере доступны обе ноды.
 
-Скриншот нод кластера
+![rabbitmq-cluster-nodes.png](rabbitmq-cluster-nodes.png.png)
 
 Так как использовалась версия RabbitMQ 4.2, вместо устаревшей политики ha-all была использована современная quorum queue hello.
 
 После этого я проверил, что очередь hello создана как quorum queue.
 
-Скриншот quorum queue
+![rabbitmq-quorum-queue](rabbitmq-quorum-queue.png)
 
 Затем с помощью rabbitmqadmin убедился, что сообщение в очереди доступно.
 
-Скриншот результата rabbitmqadmin get queue=hello
+![sk1](sk1.png)
+![sk2](sk2.png)
+![sk3](sk3.png)
+![sk4](sk4.png)
 
 Вывод
 
